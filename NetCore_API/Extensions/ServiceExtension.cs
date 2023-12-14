@@ -7,6 +7,9 @@
             services.AddDbContext<ApplicationDbContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging());
 
+            services.AddDbContext<NetCoreDemoContext>(opt =>
+                opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging());
+
             return services;
         }
     }

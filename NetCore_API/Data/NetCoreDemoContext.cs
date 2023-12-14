@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using NetCore_API.Entities;
 
-namespace Data;
+namespace NetCore_API.Data;
 
 public partial class NetCoreDemoContext : DbContext
 {
